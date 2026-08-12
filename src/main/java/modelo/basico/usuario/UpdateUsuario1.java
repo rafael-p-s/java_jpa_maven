@@ -1,10 +1,10 @@
-package modelo.basico;
+package modelo.basico.usuario;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 
-public class UpdateUsuario2 {
+public class UpdateUsuario1 {
     static void main(String[] args) {
         try (EntityManagerFactory emf = Persistence.createEntityManagerFactory("udemy_maven");
              EntityManager em = emf.createEntityManager();) {
@@ -14,10 +14,8 @@ public class UpdateUsuario2 {
             Usuario usuario = em.find(Usuario.class, 1);
             System.out.println("Pego Usuario: " + usuario.getId() + " Nome: " + usuario.getNome() + " Email: " + usuario.getEmail());
 
-            usuario.setNome("Leonardo Alterado");
+            usuario.setNome("Leonardo");
             usuario.setEmail("leonardo@uol.com");
-
-            /*em.merge(usuario);*/
 
             em.getTransaction().commit();
             System.out.println("Usuario atualizado com sucesso!");

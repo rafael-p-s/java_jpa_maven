@@ -13,7 +13,7 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
         <!--Serve para informar ao provider quais são as minhas entidades para usar com o banco. -->
-        <class>modelo.basico.Usuario</class>
+        <class>modelo.basico.usuario.Usuario</class>
 
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>

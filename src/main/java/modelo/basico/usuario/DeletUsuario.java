@@ -1,4 +1,4 @@
-package modelo.basico;
+package modelo.basico.usuario;
 
 import jakarta.persistence.*;
 

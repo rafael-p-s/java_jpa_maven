@@ -11,6 +11,10 @@
         Por isso o uso do <provaider />
         -->
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <!--Serve para informar ao provider quais são as minhas entidades para usar com o banco. -->
+        <class>modelo.basico.Usuario</class>
+
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/curso_java"/>

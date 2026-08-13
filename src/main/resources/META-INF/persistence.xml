@@ -15,6 +15,10 @@
         <!--Serve para informar ao provider quais são as minhas entidades para usar com o banco. -->
         <class>modelo.basico.usuario.Usuario</class>
         <class>modelo.basico.produto.Produto</class>
+        <class>modelo.umparaum.Assento</class>
+        <class>modelo.umparaum.Cliente</class>
+        <class>modelo.umParaMuitos.Pedidos</class>
+        <class>modelo.umParaMuitos.ItemPedido</class>
 
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>

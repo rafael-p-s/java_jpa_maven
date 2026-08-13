@@ -70,6 +70,11 @@ public class DAO<E> {
         return query.getResultList();
     }
 
+    // Buscar Cliente específico
+    public E obterID(Object id) {
+        return em.find(classe, id);
+    }
+
     // Caso eu queria passar tudo, sem tratamento de tamanho a ser passado
     public List<E> ObterTodos() {
         return this.obterTodosRegistros(10, 0);

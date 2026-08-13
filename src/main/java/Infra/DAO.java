@@ -19,6 +19,7 @@ public class DAO<E> {
                     .createEntityManagerFactory("udemy_maven");
         } catch (Exception e) {
             // logar -> log4j -> api para ajudar a criar logs de inicialização
+            e.printStackTrace();
         }
     }
 

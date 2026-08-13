@@ -19,7 +19,10 @@
         <class>modelo.umparaum.Cliente</class>
         <class>modelo.umParaMuitos.Pedidos</class>
         <class>modelo.umParaMuitos.ItemPedido</class>
-
+        <class>modelo.muitosParaMuitos.Tio</class>
+        <class>modelo.muitosParaMuitos.Sobrinho</class>
+        <class>modelo.muitosParaMuitos.Ator</class>
+        <class>modelo.muitosParaMuitos.Filme</class>
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/curso_java"/>

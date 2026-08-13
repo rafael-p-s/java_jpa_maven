@@ -1,12 +1,10 @@
 package modelo.umParaMuitos;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import javax.xml.crypto.Data;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 public class Pedidos {
@@ -15,6 +13,9 @@ public class Pedidos {
     private Long id;
 
     private Date data;
+
+    @OneToMany(mappedBy = "pedidos", fetch= FetchType.EAGER)// Gera a relação Bi direcional
+    private List<ItemPedido> itens;
 
     public Pedidos() {
         this(new Date()); // passa a data de hj, por padrão sem precisar informar.
@@ -38,5 +39,13 @@ public class Pedidos {
 
     public void setData(Date data) {
         this.data = data;
+    }
+
+    public List<ItemPedido> getItens() {
+        return itens;
+    }
+
+    public void setItens(List<ItemPedido> itens) {
+        this.itens = itens;
     }
 }

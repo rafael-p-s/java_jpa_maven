@@ -12,6 +12,9 @@
         -->
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
+        <!--Named Query-->
+        <mapping-file>META-INF/consultas.xml</mapping-file>
+
         <!--Serve para informar ao provider quais são as minhas entidades para usar com o banco. -->
         <class>modelo.basico.usuario.Usuario</class>
         <class>modelo.basico.produto.Produto</class>
@@ -38,11 +41,11 @@
 
 </persistence>
 
-<!--
-    Oracle não usa mais "javax." para se trabalhar dentro do property, com isso partir da
-    versão 3.0 é necessário usar o "jakarta."
+        <!--
+            Oracle não usa mais "javax." para se trabalhar dentro do property, com isso partir da
+            versão 3.0 é necessário usar o "jakarta."
 
-    Outra alteração é que versões 5.x do Connector/J era comum usar: com.mysql.jdbc.Driver.
-    Agora nas versões mais novas, 6.x, é comum usar: com.mysql.cj.jdbc.Driver.
-    Esse "cj" significa "Connector/J"
--->
+            Outra alteração é que versões 5.x do Connector/J era comum usar: com.mysql.jdbc.Driver.
+            Agora nas versões mais novas, 6.x, é comum usar: com.mysql.cj.jdbc.Driver.
+            Esse "cj" significa "Connector/J"
+        -->

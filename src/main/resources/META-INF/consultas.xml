@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings version="3.0"
+                 xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence/orm https://jakarta.ee/xml/ns/persistence/orm/orm_3_0.xsd">
+
+    <named-query name="obterFilmesNotaMaiorQue">
+        <query>
+            select distinct f from Filme f <!--f é a Entidade/Classe-->
+            join fetch f.atores <!-- está dizendo que eu quero os atores. Sem precisar informar que EAGER-->
+            where f.nota > :nota <!--:nota é um parâmetro para consulta-->
+        </query>
+    </named-query>
+
+</entity-mappings>

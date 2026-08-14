@@ -26,6 +26,10 @@
         <class>modelo.muitosParaMuitos.Sobrinho</class>
         <class>modelo.muitosParaMuitos.Ator</class>
         <class>modelo.muitosParaMuitos.Filme</class>
+        <class>modelo.composicao.Endereco</class>
+        <class>modelo.composicao.Fornecedor</class>
+        <class>modelo.composicao.Funcionario</class>
+
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/curso_java"/>

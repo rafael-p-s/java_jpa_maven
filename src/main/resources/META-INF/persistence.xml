@@ -29,6 +29,10 @@
         <class>modelo.composicao.Endereco</class>
         <class>modelo.composicao.Fornecedor</class>
         <class>modelo.composicao.Funcionario</class>
+        <class>modelo.composicao.Funcionario2</class>
+        <class>modelo.composicao.Gerente</class>
+        <class>modelo.composicao.Vendedor</class>
+
 
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
